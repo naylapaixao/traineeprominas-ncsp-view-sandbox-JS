@@ -1,0 +1,69 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+    <meta name="description" content="">
+    <meta name="author" content="">
+
+    <title>Cursos</title>
+
+    <!-- Bootstrap core CSS -->
+    <link href="vendor/bootstrap/css/bootstrap.min.css" rel="stylesheet">
+
+    <!-- Custom styles for this template -->
+    <link href="css/simple-sidebar.css" rel="stylesheet">
+
+    <!-- Scripts -->
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.0/jquery.min.js"></script>
+
+</head>
+
+<body>
+<div id="page-content-wrapper">
+
+    <nav class="navbar navbar-expand-lg navbar-light bg-light border-bottom">
+        <button class="btn btn-primary" id="menu-toggle">Menu</button>
+
+        <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+            <span class="navbar-toggler-icon"></span>
+        </button>
+
+        <div class="collapse navbar-collapse" id="navbarSupportedContent">
+            <ul class="navbar-nav ml-auto mt-2 mt-lg-0">
+                <li class="nav-item active">
+                    <a class="nav-link" href="index.html">Home <span class="sr-only">(current)</span></a>
+                </li>
+            </ul>
+        </div>
+    </nav>
+</div>
+
+<div class="col-sm-9 col-md-10 col-md-offset-2 main">
+    <div class="form-group">
+        <label for="nome">Nome do Curso</label>
+        <input type="text" class="form-control" id="name" aria-describedby="emailHelp" placeholder="Digite o seu nome">
+    </div>
+    <div class="form-group">
+        <label for="period">Periodo</label>
+        <input type="number" class="form-control" id="period" placeholder="Semestre">
+    </div>
+    <div class="form-group">
+        <label for="Cidade">Cidade</label>
+        <input type="text" class="form-control" id="city" placeholder="Cidade">
+    </div>
+    <div class="form-group">
+        <label for="Professor">Professores</label>
+    </div>
+    <div id="selection"></div>
+
+
+    <button type="submit" class="btn btn-success" onclick="postCourse()">Cadastrar</button>
+</div>
+
+
+<script src="script-course.js"></script>
+</body>
+
+</html>

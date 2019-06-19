@@ -1,0 +1,108 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+    <meta name="description" content="">
+    <meta name="author" content="">
+
+    <title>Adicionando Usuário</title>
+
+    <!-- Bootstrap core CSS -->
+    <link href="vendor/bootstrap/css/bootstrap.min.css" rel="stylesheet">
+
+    <!-- Custom styles for this template -->
+    <link href="css/simple-sidebar.css" rel="stylesheet">
+
+</head>
+<body>
+     <div id="page-content-wrapper">
+
+        <nav class="navbar navbar-expand-lg navbar-light bg-light border-bottom">
+            <button class="btn btn-primary" id="menu-toggle">Menu</button>
+            
+                    <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+                        <span class="navbar-toggler-icon"></span>
+                    </button>
+            
+            <div class="collapse navbar-collapse" id="navbarSupportedContent">
+                        <ul class="navbar-nav ml-auto mt-2 mt-lg-0">
+                            <li class="nav-item active">
+                                <a class="nav-link" href="index.html">Home <span class="sr-only">(current)</span></a>
+                            </li>
+                        </ul>
+                    </div>
+                </nav>
+            </div>
+
+    <div>
+        <label for="nome">Digite o ID do user:</label>
+        <input type="text" class="form-control" id="id" aria-describedby="emailHelp" placeholder="Digite o seu nome">
+        <button type="submit" class="btn btn-primary" onclick="getUser()">Submit</button>
+</div>
+<div class="form-group">
+    <label for="nome">Nome</label>
+    <input type="text" class="form-control" id="name" aria-describedby="emailHelp" placeholder="Digite o seu nome">
+</div>
+<div class="form-group">
+    <label for="Sobrenome">Sobrenome</label>
+    <input type="text" class="form-control" id="lastName" placeholder="Sobrenome">
+</div>
+<div class="form-check">
+    <input class="form-check-input" type="radio" name="exampleRadios" id="profile1" value="admin" checked>
+    <label class="form-check-label" for="exampleRadios1">Admin</label>
+</div>
+<div class="form-check">
+    <input class="form-check-input" type="radio" name="exampleRadios" id="profile2" value="guess">
+    <label class="form-check-label" for="exampleRadios2">Guess</label>
+</div>
+<button type="submit" class="btn btn-primary" id="push" onclick="putUser()">Submit</button>
+<script src="script.js"></script>
+
+</body>
+
+
+</html>
+
+
+
+
+
+<!-- Edit Modal HTML -->
+<!-- <div id="editUser" class="modal fade">
+        <div class="modal-content">
+            <form>
+                <div class="modal-header">
+                    <h4 class="modal-title">Edite Usuario</h4>
+                </div>
+                <div class="modal-body">
+                    <div class="form-group">
+                        <label>Nome</label>
+                        <input type="text" class="form-control" required>
+                    </div>
+                    <div class="form-group">
+                        <label>Sobrenome</label>
+                        <input type="email" class="form-control" required>
+                    </div>
+                    <div class="form-group">
+                        <label>Profile</label>
+                    </div>
+                    <div class="form-check">
+                        <input class="form-check-input" type="radio" name="exampleRadios" id="profile1" value="admin" checked>
+                        <label class="form-check-label" for="exampleRadios1">Admin</label>
+
+                    </div>
+                    <div class="form-check">
+                        <input class="form-check-input" type="radio" name="exampleRadios" id="profile2" value="guess" checked>
+                        <label class="form-check-label" for="exampleRadios2">Guess</label>
+
+                    </div>
+                <div class="modal-footer">
+                    <input type="button" class="btn btn-default" data-dismiss="modal" value="Cancel">
+                    <input type="submit" class="btn btn-info" value="Salvar">
+                </div>
+                </div>
+            </form>
+        </div>
+</div> -->
